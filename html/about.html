@@ -1,63 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
+        <title>Sobre mi - Pablo García Vivó</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/containers.css" rel="stylesheet">
         <script src="../js/index.js"></script>
-        <title>Ejercicio</title>
     </head>
     <body>
-        <div class="header">
-            <ul>
-                
-                <li><a href="./about.html">Contacto</a></li>
-                <li style="float: left;"><a href="https://www.solvam.es" target="_blank" id="solvam">SOLVAM</a></li>
-                <li style="float: left;">  </li>
-                <li style="float: left;" onclick="changeNavWidth()">
-                    <img src="../icons/nav.svg" width="30px">
-                </li>
-            </ul>
-        </div>
-        <div class="body">
-            <div id="nav" class="open">
-                <ul>
-                    <li>
-                        <a href="../index.html" class="no-active">
-                            <img src="../icons/house.svg" />
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./programing.html" class="no-active">
-                            <img src="../icons/programacion.svg" />
-                            Programacion
-                        </a>
-                    </li>
-                    <li>
-                        
-                        <a href="./langueje_mark.html" class="no-active">
-                            <img src="../icons/lenguaje_de_marcas.svg" />
-                            Len. de Marcas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./database.html" class="no-active">
-                            <img src="../icons/base_de_datos.svg" />
-                            Base de datos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./development_enviroment.html" class="no-active">
-                            <img src="../icons/entorno_de_desarrollo.svg" />
-                            Ent. de desarrollo
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div id="container">
+        <header>
+            <a href="https://www.solvam.es" target="_blank" class="solvam">SOLVAM</a>
+            <span class="toggleSidebar" onclick="changeNavWidth()">
+                <img src="../icons/nav.svg" width="30px">
+            </span>
+            <a href="../index.html">Cerrar Sesion</a>
+        </header>
+        <aside>
+            <span>Menu</span>
+            <hr>
+            <a href="./main.html" alt="main page">
+                <img src="../icons/house.svg" />
+                Home
+            </a>
+
+            <a href="./programing.html" alt="programing">
+                <img src="../icons/programacion.svg" />
+                Programacion
+            </a>
+            
+            <a href="./langueje_mark.html" alt="langueje mark">
+                <img src="../icons/lenguaje_de_marcas.svg" />
+                Len. de Marcas
+            </a>
+
+            <a href="./database.html" alt="database">
+                <img src="../icons/base_de_datos.svg" />
+                Base de datos
+            </a>
+
+            <a href="./development_enviroment.html" alt="development enviroment">
+                <img src="../icons/entorno_de_desarrollo.svg" />
+                Ent. de desarrollo
+            </a>
+            <br>
+            <span>Herramientas</span>
+            <hr>
+            <a href="../editor/index.html" alt="development enviroment">
+                <img src="../icons/editor.svg" />
+                Editor HTML Libre
+            </a>
+        </aside>
+        <main>
+            <section class="container">
                 <h1>Contacto</h1> 
                 <br>
-                <div class="contact-info">
+                <article class="contact-info">
                     <div class="fill_card"></div>
                     <div class="card">
                         <img src="../img/avatar.jpg" alt="Imagen">
@@ -66,8 +64,6 @@
                             Estudiante de Solvam<br>
                             Desarrollador Web
                         </p>
-                            
-                            
                     </div>
                     <div class="info">
                         <p>
@@ -77,37 +73,27 @@
                             Conpenso mi falta de experiencia con energia y <br>
                             ganas de aprender nuevas tecnologias.
                         </p>
-                        <div class="fill"></div>
-                        <ul>
-                            <li>
-                                <a href="mailto:pablo.garciavivo@gmail.com">
-                                    <img src="../icons/envelope-solid.svg" alt="icono_email">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tel:+34658761863">
-                                    <img src="../icons/square-phone-solid.svg" alt="icono_email">
-                                </a>       
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/pablo.garcia.vivo" target="_blank">
-                                    <img src="../icons/facebook.svg" alt="icono_facebook">
-                                </a>
-
-                            </li>
-                            <li>
-                                <a href="https://github.com/Foular623" target="_blank">
-                                    <img src="../icons/github.svg" alt="icono_github">
-                                </a>
-                            </li>
-                        </ul>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="footer">
-
-        </div> -->
+                    <div class="links">
+                        <a href="mailto:pablo.garciavivo@gmail.com">
+                            <img src="../icons/envelope-solid.svg" alt="icono_email" >
+                        </a>
+                        <a href="tel:+34658761863">
+                            <img src="../icons/square-phone-solid.svg" alt="icono_email">
+                        </a>
+                        <a href="https://www.facebook.com/pablo.garcia.vivo" target="_blank">
+                            <img src="../icons/facebook.svg" alt="icono_facebook">
+                        </a>
+                        <a href="https://github.com/Foular623" target="_blank">
+                            <img src="../icons/github.svg" alt="icono_github">
+                        </a>
+                    </div>
+                    <div class="fill"></div>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <span>Creador por <a href="./about.html">Pablo García Vivó</a></span>
+        </footer>
     </body>
 </html>

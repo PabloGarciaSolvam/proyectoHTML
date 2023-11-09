@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #101014;
+    background-color: #1A1B26;
+    color: #A9B1D6;
+    font-family: system-ui;
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: 95% 95%;
+    
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+}
+
+#html {
+    background-image: url('../assets/icons/html_icon.svg');                
+}
+
+#css {
+    background-image: url('../assets/icons/css_icon.svg');                
+}
+
+#js {
+    background-image: url('../assets/icons/js_icon.svg');                
+}
+
+#html:focus, #css:focus, #js:focus {
+    background-image: none;                
+}

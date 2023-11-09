@@ -1,0 +1,220 @@
+.container {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    margin-bottom: 10px;
+}
+
+.calendar {
+    border:solid 1px #777;
+    height: 98%;
+    width: 98%;
+}
+
+.ejers_container {
+    overflow-y: auto;
+    width: 100%;
+}
+.ejers_container::-webkit-scrollbar {
+    width: 15px;
+}
+.ejers_container::-webkit-scrollbar-track {
+    background:var(--color-hover-button);
+}
+.ejers_container::-webkit-scrollbar-thumb  {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    border: solid 3px var(--color-hover-button);
+}
+
+.ejer {
+    border: solid 1px #777;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    /* justify-content: space-between; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ejer .icon {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    flex-basis:60px;
+    box-sizing: border-box;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.ejer .icon img {
+    width: 40px;
+    filter: invert(1);
+}
+
+.ejer .enunciado {
+    flex-basis: 100%;
+    color: grey;
+    text-decoration: none;
+}
+
+.ejer:hover .enunciado {
+    text-decoration: underline;
+}
+
+.resolve_ejer {
+    border: solid 1px #777;
+    border-radius: 10px;
+}
+
+.resolve_ejer form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 50%;
+    gap: 5px;
+    padding: 50px;
+}
+
+.resolve_ejer button {
+    background-color: var(--color-button);
+    border: 0;
+    border-radius: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.resolve_ejer button:hover {
+    background-color: var(--color-hover-button);
+    color: black;
+    transition: all 0.3s ease-in;
+}
+
+
+.contact-info {
+    border: solid 1px var(--color-border-contact);
+    height: max-content;
+    width: max-content;
+    border-radius: 5px;
+    display: grid;
+    grid-template-rows: 1fr 50px 30px;
+    grid-template-columns: 10px min-content max-content;
+    grid-template-areas: 
+        "fill-card img info-card"
+        "fill-card img links"
+        "fill-card img fill"
+    ;
+    box-shadow: 1px 0px 27px 4px rgba(0,0,0,0.42);
+    -webkit-box-shadow: 1px 0px 27px 4px rgba(0,0,0,0.42);
+    -moz-box-shadow: 1px 0px 27px 4px rgba(0,0,0,0.42);
+}
+
+.contact-info .fill_card {
+    grid-area: fill-card;
+    border: solid 1px black;
+    background-color: black;
+}
+
+.contact-info .card {
+    grid-area: img;
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-info .card img {
+    width: 250px;
+    border-radius: 50%;
+    border: solid 20px #E6E6E6;
+}
+
+.contact-info .info {
+    grid-area: info-card;
+    background-color: #FBFBFB;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info .info p {
+    margin: 50px;
+    text-align: center;
+}
+
+.contact-info .links {
+    grid-area: links;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FBFBFB;
+}
+
+.contact-info .links a {
+    width: 30px;
+    transition: all 0.4s;
+}
+
+.contact-info .links a:hover {
+    transition: all 0.4s;
+    transform: scale(1.2);
+
+}
+
+.contact-info .fill {
+    grid-area: fill;
+    background-color: #FBFBFB;
+}
+
+@media only screen and (max-width: 500px) {
+    .ejer {
+        font-size: 14px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+
+    .contact-info .fill_card {
+        display: none;
+    }
+
+    .contact-info .card img {
+        width: 150px;
+        border-radius: 50%;
+        border: solid 10px #E6E6E6;
+    }
+
+    .contact-info .info p {
+        margin: 20px;
+        text-align: justify;
+    }
+
+    .contact-info .links {
+        padding: 15px;
+    }
+
+    .resolve_ejer code {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        padding: 5px;
+        align-items: start;
+        height: 100%;
+    }
+}

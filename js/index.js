@@ -1,9 +1,16 @@
+const $ = (selector) => document.querySelector(selector);
+
 function changeNavWidth() {
-    if (document.getElementById('nav').classList.contains('open')) {
-        document.getElementById('nav').classList.remove('open');
-        document.getElementById('nav').classList.add('close');
-    } else {
-        document.getElementById('nav').classList.remove('close');
-        document.getElementById('nav').classList.add('open');
+    if ($('aside').classList.contains('active')) {
+        $('aside').classList.remove('active');
+        $('.toggleSidebar').classList.remove('active');
     }
+    else {
+        $('aside').classList.add('active');
+        $('.toggleSidebar').classList.add('active');
+    }
+}
+
+function hrefTo(link) {
+    window.location.replace(link);
 }

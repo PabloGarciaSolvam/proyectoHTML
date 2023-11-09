@@ -1,68 +1,22 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Ejercicio</title>
-        <link href="./css/main.css" rel="stylesheet">
-        <script src="./js/index.js"></script>
-    </head>
-    <body>
-        <div class="header">
-            <ul>
-                
-                <li><a href="./html/about.html">Contacto</a></li>
-                <li style="float: left;"><a href="https://www.solvam.es" target="_blank" id="solvam">SOLVAM</a></li>
-                <li style="float: left;">  </li>
-                <li style="float: left;" onclick="changeNavWidth()">
-                    <img src="./icons/nav.svg" width="30px">
-                </li>
-            </ul>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesion</title>
+    <link href="./css/login.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="login">
+            <h1>Bienvenido</h1>
+            <form action="" id="login">
+                <input type="text" name="username" id="username" placeholder="Usuario">
+                <input type="password" name="passwd" id="passwd" placeholder="Contraseña">
+                <button onclick="sendLogin()" id="buttonSubmit" disabled>Iniciar Sesion</button>
+            </form>
+            <div class="msg-error" id="error"></div>
         </div>
-        <div class="body">
-            <div id="nav" class="open">
-                <ul>
-                    <li>
-                        <a href="./index.html" class="active">
-                            <img src="./icons/house.svg" />
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./html/programing.html" class="no-active">
-                            <img src="./icons/programacion.svg" />
-                            Programacion
-                        </a>
-                    </li>
-                    <li>
-                        
-                        <a href="./html/langueje_mark.html" class="no-active">
-                            <img src="./icons/lenguaje_de_marcas.svg" />
-                            Len. de Marcas
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./html/database.html" class="no-active">
-                            <img src="./icons/base_de_datos.svg" />
-                            Base de datos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./html/development_enviroment.html" class="no-active">
-                            <img src="./icons/entorno_de_desarrollo.svg" />
-                            Ent. de desarrollo
-                        </a>
-                    </li>
-                    
-                </ul>
-            </div>
-            <div id="container">
-                <div>
-                    <h1>Calendario</h1>
-                </div>
-                <div class="calendar">
-                    <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=Africa%2FCeuta&showTz=0&showCalendars=0&showPrint=0&showDate=0&showNav=0&showTitle=0&showTabs=0&src=YTgyMmM3OTM5NmVkNTlhYWNiNDRiOTkyNDVjNjk5NmZkZmY2YWIzMzAyNWM1Yjg1ZDFiYTE0NDVjNTMwZDY2MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D81B60" ></iframe>
-                </div>
-            </div>
-        </div>
-
-    </body>
+    </main>
+    <script src="./js/login.js"></script>
+</body>
 </html>

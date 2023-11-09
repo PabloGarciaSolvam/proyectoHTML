@@ -1,0 +1,83 @@
+:root {
+    --color-background: #7AC1DE;
+    --color-main: #CCF0EE;
+    --color-secondary: #4474B3;
+    --color-button: #36A7B5;
+    --color-hover-button: #94D9EB;
+    --color-border-contact: #E0E0E0;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, system-ui;
+    font-size: 20px;
+    background-color: var(--color-background);
+
+}
+main {
+    border: solid 5px black;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.login {
+    background-color: var(--color-main);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.login input {
+    text-align: center;
+    font-size: large;
+    flex-basis: 30px;
+}
+
+.login button {
+    border: none;
+    color: whitesmoke;
+    background-color: var(--color-button);
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login button:hover {
+    background-color: var(--color-hover-button);
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.login button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.msg-error {
+    font-size: 12px;
+    background-color: #EFF2D0;
+    padding: 10px;
+    color: red;
+    display: none;
+
+}
+
+.active {
+    transition: all 0.5s ease-in;
+    display: inline;
+}
